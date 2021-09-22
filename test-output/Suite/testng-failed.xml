@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="OTOAPPOne(failed)">
+    <classes>
+      <class name="oto.AddStockTest">
+        <methods>
+          <include name="verifyStockClick"/>
+          <include name="verifyFillStockForm"/>
+          <include name="EndSuite"/>
+          <include name="setUpSuite"/>
+          <include name="tearDown"/>
+          <include name="tearDownMethod"/>
+          <include name="Execution"/>
+        </methods>
+      </class> <!-- oto.AddStockTest -->
+    </classes>
+  </test> <!-- OTOAPPOne(failed) -->
+</suite> <!-- Failed suite [Suite] -->

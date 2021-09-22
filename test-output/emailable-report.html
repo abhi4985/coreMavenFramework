@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">OTOAPPOne</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">39,921</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">OTOAPPOne &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">oto.AddStockTest</td><td><a href="#m0">tearDownMethod</a></td><td rowspan="1">1632239080888</td><td rowspan="1">2</td></tr><tr><th colspan="4">OTOAPPOne &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">oto.AddStockTest</td><td><a href="#m1">verifyStockClick</a></td><td rowspan="1">1632239075585</td><td rowspan="1">5299</td></tr><tr><th colspan="4">OTOAPPOne &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">oto.AddStockTest</td><td><a href="#m2">tearDownMethod</a></td><td rowspan="1">1632239080896</td><td rowspan="1">-1632239080896</td></tr><tr><th colspan="4">OTOAPPOne &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">oto.AddStockTest</td><td><a href="#m3">verifyFillStockForm</a></td><td rowspan="1">1632239080894</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>OTOAPPOne</h2><h3 id="m0">oto.AddStockTest#tearDownMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=verifyStockClick status=FAILURE method=AddStockTest.verifyStockClick()[pri:1, instance:oto.AddStockTest@39529185] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at utility.ScreenshotUtility.getScreenshot(ScreenshotUtility.java:24)
+	at Base.Apache_POI_TC.tearDownMethod(Apache_POI_TC.java:198)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">oto.AddStockTest#verifyStockClick</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;LAP-45302Technology&apos;, ip: &apos;192.168.43.29&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-34-generic&apos;, java.version: &apos;11.0.11&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/home/abhishekgautam/Desktop/CoreMavenFramework/src/OTO Dealer Stage.apk, appPackage=com.oto.dealer.dev, deviceScreenSize=1080x2280, networkConnectionEnabled=true, statBarHeight=135.0, warnings={}, viewportRect={top=135.0, left=0.0, width=1080.0, height=1842.0}, databaseEnabled=false, deviceName=emulator-5554, platform=LINUX, deviceUDID=emulator-5554, desired={app=/home/abhishekgautam/Desktop/CoreMavenFramework/src/OTO Dealer Stage.apk, platformName=Android, deviceName=Android Device}, platformVersion=9, pixelRatio=2.75, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceScreenDensity=440.0, deviceModel=AOSP on IA Emulator, platformName=Android, deviceApiLevel=28.0, deviceManufacturer=Google}]
+Session ID: c70183ae-e2c6-4b60-9246-1c3af84f33a4
+*** Element info: {Using=xpath, value=//android.widget.FrameLayout[@index=&apos;0&apos;]//android.view.ViewGroup[@index=&apos;2&apos;]//android.widget.TextView[contains(@text,&apos;Active Stock&apos;)]/parent::android.view.ViewGroup/android.view.ViewGroup[@index=&apos;5&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:52)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:132)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at oto.AddStockTest.verifyStockClick(AddStockTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">oto.AddStockTest#tearDownMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">oto.AddStockTest#verifyFillStockForm</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at utility.ScreenshotUtility.getScreenshot(ScreenshotUtility.java:24)
+	at Base.Apache_POI_TC.tearDownMethod(Apache_POI_TC.java:198)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
